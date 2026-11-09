@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Information Finder</title>
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+   <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Non-Metal Elements</h1>
+        <p class="subtitle">Periodic Table Information Finder</p>
+
+        <div class="instructions-box">
+            <strong>Instructions:</strong><br>
+            Enter the symbol of a non-metal element (Example: H, O, Cl, Ne, Xe, Rn).
+        </div>
+
+        <label for="elementSymbol">Element Symbol</label>
+        <input type="text" id="elementSymbol" placeholder="e.g. O">
+        
+        <button id="searchBtn" py-click="search_element">Check Details</button>
+
+        <div class="result-box">
+            <h3>Result</h3>
+            <p id="result">Enter a symbol above and click check details.</p>
+        </div>
+    </div>
+
+    
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
+
